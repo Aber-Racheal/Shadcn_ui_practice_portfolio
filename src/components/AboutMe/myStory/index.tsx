@@ -1,13 +1,66 @@
 "use client";
 import React from "react";
+import Image from "next/image";
+
 
 const MyStory = () => {
     return (
         <div
-            id="aboutme"
-            className="bg-gradient-to-r from-[#0F968C] via-[#6DA5C0] to-[#294D61] w-full min-h-screen overflow-auto text-white px-4 md:px-10 py-8"
+            id="mystory"
+            className="w-full min-h-screen text-white overflow-hidden "
+            style={{
+                backgroundImage: "url('/images/mystory.jpg')", 
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+
+            }}
         >
-            <div className="ml-[300px] inset-0 bg-black opacity-40 z-0 fixed"></div>
+
+            <div
+                className="inset-0 bg-black opacity-40 z-0 h-[2500px] fixed"
+                style={{
+                    backdropFilter: "blur(30px)", 
+                    filter: "blur(8px)",
+                }}
+            ></div>
+
+
+
+            <div className="mt-[100px] ml-[25%] mr-[10%]">
+                <Image
+                    src="/images/tag.png"
+                    alt="My Story Background"
+                    width={400}
+                    height={400} 
+                    objectFit="cover"
+                    className="absolute mt-[1500px] ml-[900px]"
+                    style={{ transform: 'rotate(-15deg)' }}
+                />
+
+
+                <Image
+                    src="/images/tag1.png"
+                    alt="My Story Background"
+                    width={400} 
+                    height={400}
+                    objectFit="cover"
+                    className="absolute mt-[1000px] ml-[900px]"
+                    style={{ transform: 'rotate(15deg)' }}
+                />
+
+
+                <Image
+                    src="/images/tag2.png"
+                    alt="My Story Background"
+                    width={400}
+                    height={400}
+                    objectFit="cover"
+                    className="absolute mt-[500px] ml-[900px]"
+                    style={{ transform: 'rotate(-15deg)' }}
+                />
+
+
+            </div>
 
             <h1 className="text-[60px] md:text-[80px] lg:text-[60px] font-bold text-center mt-[100px] ml-[25%] mr-[10%] tracking-wider z-10 relative animate__animated animate__fadeIn">
                 This is my Story, This is my Store!
@@ -16,7 +69,7 @@ const MyStory = () => {
                 </span>
             </h1>
 
-            <div className="lg:px-20 z-10 mx-auto mt-12 ml-[300px]">
+            <div className="lg:px-20 z-10 mx-auto mt-12 ml-[300px] w-[1000px] relative">
                 {/* First Section */}
                 <h2 className="text-[30px] text-left font-extrabold mb-[20px]">Breaking the Myth: My Journey from Nutrition to Software Development</h2>
 
@@ -37,7 +90,7 @@ const MyStory = () => {
                 <p className="text-lg md:text-xl leading-relaxed tracking-wide space-y-6 animate__animated animate__fadeIn animate__delay-1s text-justify mb-8">
                     I mean, I could already picture it: that shiny white-collar NGO job
                     with the perfect office overlooking a sprawling city, my million-dollar
-                    smile (okay, maybe just a few million shillings) on the paycheck, sipping
+                    smile ( <span className="italic font-extralight">okay, maybe just a few million shillings</span>) on the paycheck, sipping
                     on fancy coffee every morning as I made life-changing decisions that
                     would change the health landscape forever... Right? Surely, that was the
                     dream, right?
@@ -47,7 +100,7 @@ const MyStory = () => {
                 <p className="text-lg md:text-xl leading-relaxed tracking-wide space-y-6 animate__animated animate__fadeIn animate__delay-1s text-justify mb-8">
                     But somewhere, in the back of my mind, things started to feel a little...
                     off. My heart, though content with nutrition, started to wander, asking
-                    questions I hadn’t thought to ask. “Is this really it?” It was like the
+                    questions I hadn’t thought to ask. <span className="italic font-extralight">“Is this really it?”</span> It was like the
                     universe dropped a question mark right next to my perfectly scripted
                     life, and that question mark? It was technology.
                 </p>
@@ -68,8 +121,8 @@ const MyStory = () => {
                 <p className="text-lg md:text-xl leading-relaxed tracking-wide space-y-6 animate__animated animate__fadeIn animate__delay-1s text-justify mb-8">
                     Yakub spoke about his journey in tech with the kind of passion that only
                     someone in love with coding could have. He talked about coding,
-                    problem-solving, and debugging (I didn’t even know what that was at the
-                    time) as though it was the most exciting thing in the world. I was
+                    problem-solving, and debugging <span className="font-extralight italic">(I didn’t even know what that was at the
+                        time)</span> as though it was the most exciting thing in the world. I was
                     mesmerized. But then, he shared something that hit me like a ton of
                     bricks.
                 </p>
@@ -84,14 +137,17 @@ const MyStory = () => {
                     that's when it hit me: I wanted in on tech.
                 </p>
 
-                {/* Seventh Section */}
-                <p className="text-lg md:text-xl leading-relaxed tracking-wide space-y-6 animate__animated animate__fadeIn animate__delay-1s text-justify mb-8">
-                    That conversation with Yakub was the spark that ignited a whole new
-                    passion inside me. The next day, I made the decision: I was going to
-                    pivot my career and dive into software development. It wasn’t going to
-                    be easy, but if there was one thing I learned from my nutrition studies,
-                    it was the power of persistence.
-                </p>
+                <div>
+                    {/* Seventh Section */}
+                    <p className="text-lg md:text-xl leading-relaxed tracking-wide space-y-6 animate__animated animate__fadeIn animate__delay-1s text-justify mb-8">
+                        That conversation with Yakub was the spark that ignited a whole new
+                        passion inside me. The next day, I made the decision: I was going to
+                        pivot my career and dive into software development. It wasn’t going to
+                        be easy, but if there was one thing I learned from my nutrition studies,
+                        it was the power of persistence.
+                    </p>
+                </div>
+
 
                 {/* Eighth Section */}
                 <p className="text-lg md:text-xl leading-relaxed tracking-wide space-y-6 animate__animated animate__fadeIn animate__delay-1s text-justify mb-8">
