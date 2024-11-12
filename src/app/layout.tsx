@@ -39,8 +39,8 @@ export default function RootLayout({
         </Sidebar>
 
         <div className="flex-1 h-full max-w-full">
-          {/* <HomePage /> */}
-          {/* <Projects /> */}
+          {/* <HomePage />
+          <Projects /> */}
           <MyStory />
 
         </div>

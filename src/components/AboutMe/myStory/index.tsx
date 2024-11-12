@@ -75,15 +75,15 @@ const MyStory = () => {
 
                 <p className="text-lg md:text-xl leading-relaxed tracking-wide space-y-6 animate__animated animate__fadeIn animate__delay-1s text-justify mb-8">
                     <br />
-                    <span className="text-[90px]">F</span>rom the moment I could hold a spoon, I was encouraged to pursue a
-                    career that was secure, respected, and—most importantly—practical. So,
+                    <span className="text-[90px] italic">F</span>rom the moment I could hold a spoon, I was encouraged to pursue a
+                    career that was secure, respected, and most importantly, practical. So,
                     when I decided to dive into nutrition, it seemed like the logical
-                    choice. I mean, food, health, science—what could go wrong? It was a
+                    choice. I mean, food, health, science. What could go wrong? It was a
                     well-respected field with tangible, life-changing impact. I spent years
                     buried in textbooks, research papers, and food pyramids, and when I
                     graduated with First Class Honours in Nutrition, I felt on top of the
                     world. At that point, I thought I had it all figured out. My future was
-                    set in stone—until it wasn’t.
+                    set in stone, until it wasn’t.
                 </p>
 
                 {/* Second Section */}
