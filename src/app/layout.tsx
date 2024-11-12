@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import Sidebar from "@/components/sideBar";
+import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar"
 import HomePage from "@/components/homePage";
 import Projects from "@/components/projects";
 import MyStory from "@/components/AboutMe/myStory";
@@ -34,9 +34,13 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} flex min-h-screen`}>
 
 
-        <Sidebar>
-          {children}
-        </Sidebar>
+        <SidebarProvider>
+          <AppSidebar />
+          <main>
+            <SidebarTrigger />
+            {children}
+          </main>
+        </SidebarProvider>
 
         <div className="flex-1 h-full max-w-full">
           {/* <HomePage />
