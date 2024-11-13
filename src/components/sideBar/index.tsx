@@ -48,13 +48,12 @@ const items = [
 
 export function AppSidebar() {
     return (
-        <div className="bg-black">
+        <div>
             <Sidebar>
-                <SidebarHeader />
-                <SidebarContent>
+                <SidebarContent className="bg-[#05161A] text-[#6FD]">
                     <SidebarGroup>
-                        <SidebarGroupLabel className="font-bold text-[30px]">Welcome!</SidebarGroupLabel>
-                        <SidebarGroupContent>
+                        <SidebarGroupLabel className="font-bold text-[30px] text-white mt-[15px]">Welcome!</SidebarGroupLabel>
+                        <SidebarGroupContent className="mt-[15px]">
                             <SidebarMenu>
                                 {items.map((item) => (
                                     <SidebarMenuItem key={item.title}>
@@ -70,7 +69,6 @@ export function AppSidebar() {
                         </SidebarGroupContent>
                     </SidebarGroup>
                 </SidebarContent>
-                <SidebarFooter />
             </Sidebar>
         </div>
 
