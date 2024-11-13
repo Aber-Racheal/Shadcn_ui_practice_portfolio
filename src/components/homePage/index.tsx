@@ -4,7 +4,7 @@ import { Button } from "../ui/button";
 
 const HomePage = () => {
   return (
-    <div className="bg-gradient-to-r from-[#0F968C] via-[#6DA5C0] to-[#294D61] w-full h-screen flex flex-col items-center justify-center overflow-hidden text-white">
+    <div id="homepage" className="bg-gradient-to-r from-[#0F968C] via-[#6DA5C0] to-[#294D61] w-full h-screen flex flex-col items-center justify-center overflow-hidden text-white">
       {/* Name and title */}
       <p className="italic text-[#F4F4F4] text-[30px] md:text-[40px] font-extralight text-center md:text-left mb-6 px-4 md:px-0">
         My name is{" "}

@@ -12,13 +12,16 @@ import {
     SidebarMenu,
     SidebarMenuButton,
     SidebarMenuItem,
+    SidebarHeader,
+    SidebarFooter,
+
 } from "@/components/ui/sidebar"
 
 // Menu items.
 const items = [
     {
         title: "Home",
-        url: "#",
+        url: "#homepage",
         icon: Home,
     },
     {
@@ -28,12 +31,12 @@ const items = [
     },
     {
         title: "Projects",
-        url: "#",
+        url: "#projects",
         icon: Folder,
     },
     {
         title: "My Story",
-        url: "#",
+        url: "#mystory",
         icon: Book,
     },
     {
@@ -45,8 +48,9 @@ const items = [
 
 export function AppSidebar() {
     return (
-        <div>
+        <div className="bg-black">
             <Sidebar>
+                <SidebarHeader />
                 <SidebarContent>
                     <SidebarGroup>
                         <SidebarGroupLabel className="font-bold text-[30px]">Welcome!</SidebarGroupLabel>
@@ -66,6 +70,7 @@ export function AppSidebar() {
                         </SidebarGroupContent>
                     </SidebarGroup>
                 </SidebarContent>
+                <SidebarFooter />
             </Sidebar>
         </div>
 
