@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import Image from "next/image";
 
 
 const MyStory = () => {
@@ -13,59 +12,24 @@ const MyStory = () => {
                 backgroundSize: "cover",
                 backgroundPosition: "center",
                 minHeight: "100vh",
+                height: "auto",
                 
             }}
         >
 
             <div
-                className="inset-0 bg-black opacity-40 z-0 fixed min-h-full"
+                className="inset-0 bg-black opacity-40 z-0 fixed"
                 style={{
                     backdropFilter: "blur(30px)",
                     filter: "blur(8px)",
+                    height: "100%"
                 }}
             ></div>
 
 
-
-            {/* <div className="relative mt-[100px] ml-[25%] mr-[10%]">
-                <Image
-                    src="/images/tag.png"
-                    alt="My Story Background"
-                    width={400}
-                    height={400}
-                    objectFit="cover"
-                    className="absolute mt-[1500px] ml-[900px]"
-                    style={{ transform: 'rotate(-15deg)' }}
-                />
-
-
-                <Image
-                    src="/images/tag1.png"
-                    alt="My Story Background"
-                    width={400}
-                    height={400}
-                    objectFit="cover"
-                    className="absolute mt-[1000px] ml-[900px]"
-                    style={{ transform: 'rotate(15deg)' }}
-                />
-
-
-                <Image
-                    src="/images/tag2.png"
-                    alt="My Story Background"
-                    width={400}
-                    height={400}
-                    objectFit="cover"
-                    className="absolute mt-[500px] ml-[900px]"
-                    style={{ transform: 'rotate(-15deg)' }}
-                />
-
-
-            </div> */}
-
-            <h1 className="text-[60px] md:text-[80px] lg:text-[60px] font-bold text-center ml-[25%] mr-[10%] tracking-wider z-10 relative animate__animated animate__fadeIn">
+            <h1 className="text-[60px] md:text-[80px] lg:text-[60px] font-bold text-center ml-[10%] mr-[10%] tracking-wider z-10 relative animate__animated animate__fadeIn">
                 This is my Story, This is my Store!
-                <span className="text-[30px] italic font-thin mt-2 block">
+                <span className="text-[20px] italic font-thin mt-2 block">
                     Not that song that you thought of, right? Yeah, My store of mem'ries!
                 </span>
             </h1>

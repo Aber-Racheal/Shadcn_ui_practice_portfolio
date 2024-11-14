@@ -29,10 +29,10 @@ const Projects = () => {
     }
 
     return (
-        <div id="projects" className="bg-gradient-to-r from-[#0F968C] via-[#6DA5C0] to-[#294D61] w-full h-screen flex flex-col items-center justify-center overflow-hidden text-white">
+        <div id="projects" className="bg-gradient-to-r from-[#0F968C] via-[#6DA5C0] to-[#294D61] w-full h-screen overflow-hidden text-white">
 
-            <h1 className="text-[60px] font-bold text-center ml-[300px] mb-[200px]">My Projects Are Like Pizza – Always Better When Shared!</h1>
-            <Carousel className="w-full max-w-sm ml-[300px]">
+            <h1 className="text-[60px] font-bold text-center m-[10px]">My Projects Are Like Pizza – Always Better When Shared!</h1>
+            <Carousel className="w-full max-w-sm ml-[450px] mt-[100px]">
                 <CarouselContent className="-ml-1">
                     {Array.from({ length: 10 }).map((_, index) => (
                         <CarouselItem key={index} className="pl-1 md:basis-1/2 lg:basis-1/3">
