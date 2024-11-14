@@ -7,31 +7,32 @@ const MyStory = () => {
     return (
         <div
             id="mystory"
-            className="w-full min-h-screen text-white overflow-hidden "
+            className="text-white relative"
             style={{
-                backgroundImage: "url('/images/mystory.jpg')", 
+                backgroundImage: "url('/images/mystory.jpg')",
                 backgroundSize: "cover",
                 backgroundPosition: "center",
-
+                minHeight: "100vh",
+                
             }}
         >
 
             <div
-                className="inset-0 bg-black opacity-40 z-0 h-[2500px] fixed"
+                className="inset-0 bg-black opacity-40 z-0 fixed min-h-full"
                 style={{
-                    backdropFilter: "blur(30px)", 
+                    backdropFilter: "blur(30px)",
                     filter: "blur(8px)",
                 }}
             ></div>
 
 
 
-            <div className="mt-[100px] ml-[25%] mr-[10%]">
+            {/* <div className="relative mt-[100px] ml-[25%] mr-[10%]">
                 <Image
                     src="/images/tag.png"
                     alt="My Story Background"
                     width={400}
-                    height={400} 
+                    height={400}
                     objectFit="cover"
                     className="absolute mt-[1500px] ml-[900px]"
                     style={{ transform: 'rotate(-15deg)' }}
@@ -41,7 +42,7 @@ const MyStory = () => {
                 <Image
                     src="/images/tag1.png"
                     alt="My Story Background"
-                    width={400} 
+                    width={400}
                     height={400}
                     objectFit="cover"
                     className="absolute mt-[1000px] ml-[900px]"
@@ -60,16 +61,16 @@ const MyStory = () => {
                 />
 
 
-            </div>
+            </div> */}
 
-            <h1 className="text-[60px] md:text-[80px] lg:text-[60px] font-bold text-center mt-[100px] ml-[25%] mr-[10%] tracking-wider z-10 relative animate__animated animate__fadeIn">
+            <h1 className="text-[60px] md:text-[80px] lg:text-[60px] font-bold text-center ml-[25%] mr-[10%] tracking-wider z-10 relative animate__animated animate__fadeIn">
                 This is my Story, This is my Store!
                 <span className="text-[30px] italic font-thin mt-2 block">
                     Not that song that you thought of, right? Yeah, My store of mem'ries!
                 </span>
             </h1>
 
-            <div className="lg:px-20 z-10 mx-auto mt-12 ml-[300px] w-[1000px] relative">
+            <div className="lg:px-20 z-10 mx-auto mt-12 relative">
                 {/* First Section */}
                 <h2 className="text-[30px] text-left font-extrabold mb-[20px]">Breaking the Myth: My Journey from Nutrition to Software Development</h2>
 

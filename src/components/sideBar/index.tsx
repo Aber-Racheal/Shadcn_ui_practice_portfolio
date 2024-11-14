@@ -1,7 +1,11 @@
 'use client'
-import React from "react";
+import React, { useState } from "react";
+import HomePage from "../homePage";
+import MyStory from "../aboutMe/myStory";
+import Projects from "../projects";
 
 import { Home, User, Folder, Book, Phone } from "lucide-react"
+
 
 import {
     Sidebar,
@@ -24,12 +28,31 @@ import { CollapsibleContent } from "@radix-ui/react-collapsible";
 import { Collapsible } from "@radix-ui/react-collapsible";
 
 
+
+// Type definitions for sidebar items
+interface SubItem {
+    title: string;
+    url: string;
+    target?: string; 
+  }
+  
+  interface SidebarItem {
+    title: string;
+    url: string;
+    icon: React.ComponentType;
+    content?: React.JSX.Element;
+    subItems?: SubItem[]; 
+  }
+
+  
+  
 const items = [
     {
         title: "Home",
         url: "#homepage",
         icon: Home,
-        subItems: []
+        subItems: [],
+        content: <HomePage />
     },
     {
         title: "About Racheal",
@@ -46,12 +69,14 @@ const items = [
             { title: "Project 1", url: "#project1" },
             { title: "Project 2", url: "#project2" },
             { title: "Project 3", url: "#project3" }
-        ]
+        ],
+        content: <Projects/>
     },
     {
         title: "My Story",
         icon: Book,
-        subItems: []
+        subItems: [],
+        content: <MyStory />
     },
     {
         title: "Contact Me",
@@ -60,14 +85,22 @@ const items = [
             { title: "LinkedIn", url: "https://www.linkedin.com", target: "_blank" },
             { title: "GitHub", url: "https://github.com", target: "_blank" },
             { title: "Email", url: "rachealaberr@gmail.com" },
-            { title: "Phone", url: "tel:+256787635823" }
+            { title: "Phone", url: "tel:+256787635823" },
+            { title: "Twitter", url: "tel:+256787635823" }
         ]
     },
 ]
 
 export function AppSidebar() {
+
+    const [activeContent, setActiveContent] = useState<React.JSX.Element | null>(<HomePage />);
+
+    const handleMenuItemClick = (content: React.JSX.Element | null) => {
+        setActiveContent(content);
+    };
+
     return (
-        <div>
+        <div className="flex">
             <Sidebar>
                 <SidebarContent className="bg-[#05161A] text-[#6FD]">
                     <SidebarGroup>
@@ -79,7 +112,8 @@ export function AppSidebar() {
                                         <Collapsible className="group/collapsible">
                                             <CollapsibleTrigger asChild>
                                                 <SidebarMenuButton asChild>
-                                                    <a href={item.url} className="mt-[15px] text-[30px] flex items-center">
+                                                    <a href={item.url} className="mt-[15px] text-[30px] flex items-center"
+                                                        onClick={() => handleMenuItemClick(item.content || null)}>
                                                         <item.icon />
                                                         <span className="ml-2">{item.title}</span>
                                                     </a>
@@ -111,6 +145,7 @@ export function AppSidebar() {
                     </SidebarGroup>
                 </SidebarContent>
             </Sidebar>
+            <div className="flex-1 overflow-auto">{activeContent}</div>
         </div>
     );
 }

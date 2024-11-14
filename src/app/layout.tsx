@@ -1,12 +1,10 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar"
+import { SidebarProvider } from "@/components/ui/sidebar"
 import { AppSidebar } from "@/components/sideBar"
 import { cookies } from "next/headers"
-import HomePage from "@/components/homePage";
-import Projects from "@/components/projects";
-import MyStory from "@/components/aboutMe/myStory";
+
 
 
 const geistSans = localFont({
@@ -33,14 +31,10 @@ export default async function Layout({ children }: { children: React.ReactNode }
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} flex min-h-screen`}>
         <SidebarProvider defaultOpen={defaultOpen}>
-          <AppSidebar />
-          <main className="flex-1">
-            <SidebarTrigger />
-            {children}
-            <HomePage/>
-            <MyStory/>
-            <Projects/>
-          </main>
+          <div className="flex min-h-screen">
+            <AppSidebar />
+            <main className="flex-1 overflow-auto">{children}</main>
+          </div>
         </SidebarProvider>
       </body>
     </html>
