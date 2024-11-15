@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import HomePage from "../homePage";
 import MyStory from "../aboutMe/myStory";
 import Projects from "../projects";
+import Contacts from "../contacts";
 
 import { Home, User, Folder, Book, Phone } from "lucide-react"
 
@@ -82,12 +83,14 @@ const items = [
         title: "Contact Me",
         icon: Phone,
         subItems: [
-            { title: "LinkedIn", url: "https://www.linkedin.com", target: "_blank" },
-            { title: "GitHub", url: "https://github.com", target: "_blank" },
-            { title: "Email", url: "rachealaberr@gmail.com" },
-            { title: "Phone", url: "tel:+256787635823" },
-            { title: "Twitter", url: "tel:+256787635823" }
-        ]
+            { title: "LinkedIn", url: "#contacts", target: "_blank" },
+            { title: "GitHub",url: "#contacts", target: "_blank" },
+            { title: "Email",url: "#contacts"},
+            { title: "Phone", url: "#contacts" },
+            { title: "Twitter", url: "#contacts" }
+        ],
+        url: "#contacts",
+        content: < Contacts/>
     },
 ]
 
