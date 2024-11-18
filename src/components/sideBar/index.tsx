@@ -4,6 +4,7 @@ import HomePage from "../homePage";
 import MyStory from "../aboutMe/myStory";
 import Projects from "../projects";
 import Contacts from "../contacts";
+import Hobbies from "../aboutMe/hobbies";
 
 import { Home, User, Folder, Book, Phone } from "lucide-react"
 
@@ -61,7 +62,8 @@ const items = [
         subItems: [
             { title: "What Racheal Does", url: "#iDo" },
             { title: "Hobbies", url: "#hobbies" }
-        ]
+        ],
+        content: <Hobbies/> 
     },
     {
         title: "Projects",
