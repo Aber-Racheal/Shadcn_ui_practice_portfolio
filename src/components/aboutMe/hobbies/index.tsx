@@ -109,7 +109,7 @@ export default function Hobbies() {
                         />
                         <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center p-6">
                             <p className="text-lg md:text-xl font-semibold text-white text-shadow-md">
-                                Table games are my ultimate escape — a blend of strategy, laughter, and friendly competition. They’re all about the thrill of the moment and the joy of connection. No screens, just good vibes and great company.</p>
+                                Table games are my ultimate escape, a blend of strategy, laughter, and friendly competition. They’re all about the thrill of the moment and the joy of connection. No screens, just healthy energy and great company!</p>
                         </div>
                     </div>
                 </div>
@@ -119,7 +119,7 @@ export default function Hobbies() {
             {/* Conclusion */}
             <div className="text-center mt-12 px-4 md:px-16">
                 <p className="text-lg md:text-xl font-bold text-shadow-md italic">
-                    All of these passions: comedy, music, journaling, travel, and manifestation are what make my days complete. I can’t imagine a day without at least one of these elements in my life. They keep me grounded, inspired, and balanced. Whether I’m cracking up at a Steve Harvey special, playing my favorite tune, reflecting in my journal, exploring the world, or manifesting my dreams, these hobbies bring joy and meaning into my life.
+                    I can’t imagine a day without at least one of these elements in my life. They keep me grounded, inspired, and balanced. Whether I’m cracking up at a Steve Harvey special, playing my favorite tune, reflecting in my journal, exploring the world, playing chess or manifesting my dreams, these hobbies bring joy and meaning into my life.
                 </p>
             </div>
 
