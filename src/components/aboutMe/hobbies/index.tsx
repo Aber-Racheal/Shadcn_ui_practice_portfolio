@@ -97,7 +97,6 @@ export default function Hobbies() {
                 </div>
 
 
-
                 <div className="relative flex flex-col items-center text-center">
                     <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-lg shadow-xl overflow-hidden group">
                         <Image

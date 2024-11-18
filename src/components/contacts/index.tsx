@@ -1,4 +1,5 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { FaLinkedin, FaGithub, FaEnvelope, FaPhone, FaTwitter } from "react-icons/fa";
 
 
 export default function Contacts() {
@@ -7,13 +8,13 @@ export default function Contacts() {
         <div id="contacts" className="bg-gradient-to-r from-[#0F968C] via-[#6DA5C0] to-[#294D61] w-screen fixed h-screen text-white">
             <h1 className="text-[60px] md:text-[80px] lg:text-[60px] font-bold text-center tracking-wider z-10 relative animate__animated animate__fadeIn mt-[90px] mr-[20%]">I'm only a call away!</h1>
             <div className="ml-[120px] mt-[100px]">
-                <Tabs defaultValue="linkendin" className="w-[547px] bg-[#0C7075] ml-[200px] h-[250px]">
-                    <TabsList className="gap-[50px]">
-                        <TabsTrigger value="linkendin" className="bg-[#294D61] text-white">LinkendIn</TabsTrigger>
-                        <TabsTrigger value="github" className="bg-[#294D61] text-white">GitHub</TabsTrigger>
-                        <TabsTrigger value="email" className="bg-[#294D61] text-white">Email</TabsTrigger>
-                        <TabsTrigger value="phone" className="bg-[#294D61] text-white">Phone</TabsTrigger>
-                        <TabsTrigger value="twitter" className="bg-[#294D61] text-white">Twitter</TabsTrigger>
+                <Tabs defaultValue="linkendin" className="w-[699px] bg-[#0C7075] ml-[100px] h-[250px] shadow-xl rounded-lg">
+                    <TabsList className="gap-[50px] bg-[#294D61] rounded-t-lg">
+                        <TabsTrigger value="linkendin" className="bg-[#294D61] text-white gap-[10px]" >    <FaLinkedin size={20} /> LinkendIn</TabsTrigger>
+                        <TabsTrigger value="github" className="bg-[#294D61] text-white gap-[10px]">   <FaGithub size={20} /> GitHub</TabsTrigger>
+                        <TabsTrigger value="email" className="bg-[#294D61] text-white gap-[10px]"> <FaEnvelope size={20} /> Email</TabsTrigger>
+                        <TabsTrigger value="phone" className="bg-[#294D61] text-white gap-[10px]">   <FaPhone size={20} /> Phone</TabsTrigger>
+                        <TabsTrigger value="twitter" className="bg-[#294D61] text-white gap-[10px]"> <FaTwitter size={20} /> Twitter</TabsTrigger>
                     </TabsList>
 
                     <TabsContent value="linkendin" className="p-[10px] text-justify">

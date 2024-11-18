@@ -85,11 +85,7 @@ const items = [
         title: "Contact Me",
         icon: Phone,
         subItems: [
-            { title: "LinkedIn", url: "#contacts", target: "_blank" },
-            { title: "GitHub",url: "#contacts", target: "_blank" },
-            { title: "Email",url: "#contacts"},
-            { title: "Phone", url: "#contacts" },
-            { title: "Twitter", url: "#contacts" }
+            
         ],
         url: "#contacts",
         content: < Contacts/>
