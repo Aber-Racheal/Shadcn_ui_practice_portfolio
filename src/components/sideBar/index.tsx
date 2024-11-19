@@ -5,8 +5,9 @@ import MyStory from "../aboutMe/myStory";
 import Projects from "../projects";
 import Contacts from "../contacts";
 import Hobbies from "../aboutMe/hobbies";
+import WhatIDo from "../aboutMe/iDo";
 
-import { Home, User, Folder, Book, Phone } from "lucide-react"
+import { Home, User, Folder, Book, Phone, Import } from "lucide-react"
 
 
 import {
@@ -28,6 +29,7 @@ import { CollapsibleTrigger } from "@radix-ui/react-collapsible";
 import { CollapsibleContent } from "@radix-ui/react-collapsible";
 
 import { Collapsible } from "@radix-ui/react-collapsible";
+
 
 
 
@@ -63,7 +65,7 @@ const items = [
             { title: "What Racheal Does", url: "#iDo" },
             { title: "Hobbies", url: "#hobbies" }
         ],
-        content: <Hobbies/> 
+        content: <WhatIDo/>,
     },
     {
         title: "Projects",
